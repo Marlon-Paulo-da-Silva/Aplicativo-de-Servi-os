@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:projetinhoflutterhttp/components/horizontal_listview.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -8,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -28,6 +31,7 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: <Widget>[
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Stack(
                 children: <Widget>[
@@ -146,6 +150,50 @@ class _HomePageState extends State<HomePage> {
                       SizedBox(height: 10.0),
                     ],
                   )
+                ],
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Stack(
+                children: <Widget>[
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  HorizontalList(),
+                ],
+              ),
+              SizedBox(
+                height: 30.0,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'Cupons e Ofertas',
+                  style: TextStyle(),
+                ),
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Stack(
+                children: <Widget>[
+                  HorizontalList(),
+                ],
+              ),
+              SizedBox(
+                height: 30.0,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text('Serviços Recomendados'),
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Stack(
+                children: <Widget>[
+                  HorizontalList(),
                 ],
               ),
             ],
