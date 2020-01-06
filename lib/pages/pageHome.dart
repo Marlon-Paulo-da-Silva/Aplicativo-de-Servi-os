@@ -174,6 +174,9 @@ class PageHome extends StatelessWidget {
                   HorizontalList(),
                 ],
               ),
+              SizedBox(
+                height: 20.0,
+              ),
             ],
           )
         ],

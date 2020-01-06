@@ -1,7 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
-import 'package:projetinhoflutterhttp/pages/flutterPages.dart';
 import 'package:projetinhoflutterhttp/pages/pageHome.dart';
 import 'package:projetinhoflutterhttp/pages/pageMessage.dart';
 import 'package:projetinhoflutterhttp/pages/pageProfile.dart';
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Aplicativo de Serviços',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -33,14 +32,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int pageIndex = 0;
 
-  final PagesFlutter _pages = PagesFlutter();
   final PageProfile _profile = PageProfile();
   final PageHome _home = PageHome();
   final PageMessage _messages = PageMessage();
   final PageOffer _offer = PageOffer();
   final PageSearch _search = PageSearch();
 
-  Widget _showPage = new PagesFlutter();
+  Widget _showPage = new PageHome();
 
   Widget _pageChooser(int page) {
     switch (page) {
@@ -72,6 +70,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Container(
         child: _showPage,
       ),

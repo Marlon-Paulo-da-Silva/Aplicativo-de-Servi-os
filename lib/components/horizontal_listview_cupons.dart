@@ -10,7 +10,7 @@ class _HorizontalListviewCuponsState extends State<HorizontalListviewCupons> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60.0,
+      height: 30.0,
     );
   }
 }
