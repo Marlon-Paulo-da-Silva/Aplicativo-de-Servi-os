@@ -228,6 +228,11 @@ class _HomePageState extends State<HomePage> {
             size: 20,
             color: Colors.white,
           ),
+          Icon(
+            Icons.local_offer,
+            size: 20,
+            color: Colors.white,
+          ),
         ],
         animationDuration: Duration(milliseconds: 200),
         index: 0,
