@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:projetinhoflutterhttp/components/horizontal_listview.dart';
+import 'package:projetinhoflutterhttp/components/horizontal_listview_cupons.dart';
 
 void main() => runApp(MyApp());
 
@@ -164,7 +165,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               SizedBox(
-                height: 30.0,
+                height: 20.0,
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -178,7 +179,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Stack(
                 children: <Widget>[
-                  HorizontalList(),
+                  HorizontalListviewCupons(),
                 ],
               ),
               SizedBox(
