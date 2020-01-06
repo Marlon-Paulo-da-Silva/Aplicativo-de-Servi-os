@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'package:projetinhoflutterhttp/components/horizontal_listview.dart';
@@ -200,6 +201,40 @@ class _HomePageState extends State<HomePage> {
             ],
           )
         ],
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.white,
+        buttonBackgroundColor: Colors.indigo[800],
+        color: Colors.indigo[800],
+        height: 50.0,
+        items: <Widget>[
+          Icon(
+            Icons.home,
+            size: 20,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.search,
+            size: 20,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.message,
+            size: 20,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.perm_identity,
+            size: 20,
+            color: Colors.white,
+          ),
+        ],
+        animationDuration: Duration(milliseconds: 200),
+        index: 0,
+        onTap: (index) {
+          debugPrint('botao $index');
+          //Handle button tap
+        },
       ),
     );
   }
