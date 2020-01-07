@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:projetinhoflutterhttp/components/horizontal_listview.dart';
-import 'package:projetinhoflutterhttp/components/horizontal_listview_cupons.dart';
-import 'package:projetinhoflutterhttp/components/horizontal_listview_recomended.dart';
-import 'package:projetinhoflutterhttp/components/input_search.dart';
+import 'components/horizontal_listview.dart';
+import 'package:appdeservicos/components/horizontal_listview_cupons.dart';
+import 'package:appdeservicos/components/horizontal_listview_recomended.dart';
+import 'package:appdeservicos/components/input_search.dart';
 
 class PageHome extends StatelessWidget {
   @override

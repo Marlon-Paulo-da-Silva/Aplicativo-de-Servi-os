@@ -1,11 +1,12 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
-import 'package:projetinhoflutterhttp/pages/pageHome.dart';
-import 'package:projetinhoflutterhttp/pages/pageMessage.dart';
-import 'package:projetinhoflutterhttp/pages/pageProfile.dart';
-import 'package:projetinhoflutterhttp/pages/pageSearch.dart';
-import 'package:projetinhoflutterhttp/pages/pageOffer.dart';
+import 'pages/pageHome.dart';
+import 'pages/pageMessage.dart';
+import 'pages/pageProfile.dart';
+import 'pages/pageSearch.dart';
+
+import 'pages/pageOffer.dart';
 
 void main() => runApp(MyApp());
 
