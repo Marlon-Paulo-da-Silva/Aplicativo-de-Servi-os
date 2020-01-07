@@ -148,8 +148,13 @@ class PageHome extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 8.0, top: 8.0),
                 child: Text(
-                  'Cupons e Ofertas',
-                  style: TextStyle(),
+                  'CUPONS E OFERTAS',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0,
+                    fontFamily: 'Quicksand',
+                    color: Colors.indigo[800],
+                  ),
                 ),
               ),
               Stack(
@@ -162,7 +167,15 @@ class PageHome extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text('Serviços Recomendados'),
+                child: Text(
+                  'SERVIÇOS RECOMENDADOS',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0,
+                    fontFamily: 'Quicksand',
+                    color: Colors.indigo[800],
+                  ),
+                ),
               ),
               Stack(
                 children: <Widget>[
