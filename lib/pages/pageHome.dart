@@ -145,14 +145,11 @@ class PageHome extends StatelessWidget {
                 height: 20.0,
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(left: 8.0, top: 8.0),
                 child: Text(
                   'Cupons e Ofertas',
                   style: TextStyle(),
                 ),
-              ),
-              SizedBox(
-                height: 10.0,
               ),
               Stack(
                 children: <Widget>[
@@ -160,14 +157,11 @@ class PageHome extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 30.0,
+                height: 20.0,
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text('Serviços Recomendados'),
-              ),
-              SizedBox(
-                height: 10.0,
               ),
               Stack(
                 children: <Widget>[
@@ -175,7 +169,7 @@ class PageHome extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 20.0,
+                height: 5.0,
               ),
             ],
           )
