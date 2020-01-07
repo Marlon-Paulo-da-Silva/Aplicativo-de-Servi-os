@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
-import 'components/horizontal_listview.dart';
-import 'package:appdeservicos/components/horizontal_listview_cupons.dart';
-import 'package:appdeservicos/components/horizontal_listview_recomended.dart';
-import 'package:appdeservicos/components/input_search.dart';
+<<<<<<< HEAD
+import 'package:projetinhoflutterhttp/components/horizontal_listview.dart';
+import 'package:projetinhoflutterhttp/components/horizontal_listview_cupons.dart';
+import 'package:projetinhoflutterhttp/components/horizontal_listview_recomended.dart';
+import 'package:projetinhoflutterhttp/components/input_search.dart';
+=======
+import 'package:projetinhoflutterhttp/components/horizontal_listview.dart';
+import 'package:projetinhoflutterhttp/components/horizontal_listview_cupons.dart';
+import 'package:projetinhoflutterhttp/components/horizontal_listview_recomended.dart';
+>>>>>>> parent of e0c5a9e... criando a; pagina search adicionando o input
 
 class PageHome extends StatelessWidget {
   @override
@@ -106,7 +112,27 @@ class PageHome extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 20.0),
-                      InputSearch(),
+                      Padding(
+                        padding: EdgeInsets.only(left: 15.0, right: 15.0),
+                        child: Material(
+                          elevation: 5.0,
+                          borderRadius: BorderRadius.circular(5.0),
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              prefixIcon: Icon(
+                                Icons.search,
+                                color: Colors.indigo[800],
+                                size: 30.0,
+                              ),
+                              hintText: 'Encontre o que precisa',
+                              hintStyle: TextStyle(
+                                  color: Colors.black45,
+                                  fontFamily: 'Quicksand'),
+                            ),
+                          ),
+                        ),
+                      ),
                       SizedBox(height: 10.0),
                     ],
                   )

@@ -1,4 +1,4 @@
-package com.example.appdeservicos
+package com.example.projetinhoflutterhttp
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
