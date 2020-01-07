@@ -50,22 +50,24 @@ class Cupon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(2.0),
-      child: InkWell(
-        onTap: () {},
-        child: Container(
-          width: 220.0,
-          child: Card(
-            elevation: 4.0,
-            child: ListTile(
-              leading: FlutterLogo(size: 42.0),
-              title: Text('15% Cabeleireiro'),
-              subtitle: Text('Só nesse fim de semanda o corte sai por 10,00'),
+    return Stack(
+      children: <Widget>[
+        InkWell(
+          onTap: () {},
+          child: Container(
+            height: 100.0,
+            width: 220.0,
+            child: Card(
+              elevation: 4.0,
+              child: ListTile(
+                leading: FlutterLogo(size: 42.0),
+                title: Text('15% Cabeleireiro'),
+                subtitle: Text('Só nesse fim de semanda o corte sai por 10,00'),
+              ),
             ),
           ),
         ),
-      ),
+      ],
     );
   }
 }

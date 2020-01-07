@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projetinhoflutterhttp/components/horizontal_listview.dart';
 import 'package:projetinhoflutterhttp/components/horizontal_listview_cupons.dart';
+import 'package:projetinhoflutterhttp/components/horizontal_listview_recomended.dart';
 
 class PageHome extends StatelessWidget {
   @override
@@ -157,7 +158,7 @@ class PageHome extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 20.0,
+                height: 5.0,
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -165,7 +166,7 @@ class PageHome extends StatelessWidget {
               ),
               Stack(
                 children: <Widget>[
-                  HorizontalList(),
+                  HorizontalListviewRecomended(),
                 ],
               ),
               SizedBox(
