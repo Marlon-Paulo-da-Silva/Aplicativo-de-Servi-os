@@ -106,7 +106,7 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white,
           ),
         ],
-        animationDuration: Duration(milliseconds: 200),
+        animationDuration: Duration(milliseconds: 800),
         index: pageIndex,
         onTap: (index) {
           debugPrint('botao $index');
