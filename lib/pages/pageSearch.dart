@@ -10,7 +10,7 @@ class PageSearch extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 8.0),
             child: Container(
-              child: InputSearch(),
+              child: InputSearch(inputHintText: 'O que você precisa?'),
             ),
           ),
         ],

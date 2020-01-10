@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class InputSearch extends StatelessWidget {
+  final String inputHintText;
+
+  const InputSearch({this.inputHintText});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,7 +20,8 @@ class InputSearch extends StatelessWidget {
               color: Colors.indigo[800],
               size: 30.0,
             ),
-            hintText: 'Encontre o que precisa',
+            // hintText: hintText,
+            hintText: inputHintText,
             hintStyle:
                 TextStyle(color: Colors.black45, fontFamily: 'Quicksand'),
           ),

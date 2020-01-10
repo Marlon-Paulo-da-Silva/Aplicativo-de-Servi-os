@@ -106,7 +106,7 @@ class PageHome extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 20.0),
-                      InputSearch(),
+                      InputSearch(inputHintText: 'O que você precisa?'),
                       SizedBox(height: 10.0),
                     ],
                   )
