@@ -1,12 +1,21 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
+<<<<<<< HEAD
 import 'pages/pageHome.dart';
 import 'pages/pageMessage.dart';
 import 'pages/pageProfile.dart';
 import 'pages/pageSearch.dart';
 
 import 'pages/pageOffer.dart';
+=======
+import 'package:projetinhoflutterhttp/pages/pageContacts.dart';
+import 'package:projetinhoflutterhttp/pages/pageHome.dart';
+// import 'package:projetinhoflutterhttp/pages/pageMessage.dart';
+import 'package:projetinhoflutterhttp/pages/pageProfile.dart';
+import 'package:projetinhoflutterhttp/pages/pageSearch.dart';
+import 'package:projetinhoflutterhttp/pages/pageOffer.dart';
+>>>>>>> messagePage
 
 void main() => runApp(MyApp());
 
@@ -35,9 +44,10 @@ class _HomePageState extends State<HomePage> {
 
   final PageProfile _profile = PageProfile();
   final PageHome _home = PageHome();
-  final PageMessage _messages = PageMessage();
+  //final PageMessage _messages = PageMessage();
   final PageOffer _offer = PageOffer();
   final PageSearch _search = PageSearch();
+  final PageContacts _contacts = PageContacts();
 
   Widget _showPage = new PageHome();
 
@@ -50,7 +60,7 @@ class _HomePageState extends State<HomePage> {
         return _search;
         break;
       case 2:
-        return _messages;
+        return _contacts;
         break;
       case 3:
         return _profile;

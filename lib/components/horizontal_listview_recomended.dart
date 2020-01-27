@@ -61,8 +61,9 @@ class Recomended extends StatelessWidget {
               elevation: 4.0,
               child: ListTile(
                 leading: FlutterLogo(size: 42.0),
-                title: Text('15% Cabeleireiro'),
-                subtitle: Text('Só nesse fim de semanda o corte sai por 10,00'),
+                title: Text('15% na Pintura'),
+                subtitle: Text(
+                    'Só nesse fim de semanda a pintura com desconto de 15,00'),
               ),
             ),
           ),

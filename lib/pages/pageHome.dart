@@ -112,6 +112,7 @@ class PageHome extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 20.0),
+<<<<<<< HEAD
                       Padding(
                         padding: EdgeInsets.only(left: 15.0, right: 15.0),
                         child: Material(
@@ -133,6 +134,9 @@ class PageHome extends StatelessWidget {
                           ),
                         ),
                       ),
+=======
+                      InputSearch(inputHintText: 'O que você precisa?'),
+>>>>>>> messagePage
                       SizedBox(height: 10.0),
                     ],
                   )
