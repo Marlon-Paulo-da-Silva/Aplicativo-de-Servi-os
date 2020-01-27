@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projetinhoflutterhttp/components/input_search.dart';
 
 class PageContacts extends StatefulWidget {
   @override
@@ -77,6 +76,14 @@ class _PageContactsState extends State<PageContacts> {
                       CircleAvatar(
                         backgroundColor: Colors.white,
                         child: Icon(
+                          Icons.search,
+                          color: Colors.indigo[800],
+                          size: 30,
+                        ),
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Icon(
                           Icons.add,
                           color: Colors.indigo[800],
                           size: 30,
@@ -90,7 +97,65 @@ class _PageContactsState extends State<PageContacts> {
             SizedBox(
               height: 10,
             ),
-            InputSearch(inputHintText: 'Pesquise uma mensagem?'),
+            Container(
+              height: 80,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(left: 8.0),
+                    child: CircleAvatar(
+                        backgroundColor: Colors.grey,
+                        radius: 30,
+                        child: Icon(
+                          Icons.add,
+                          size: 24,
+                          color: Colors.black,
+                        )),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12.0),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.grey,
+                      radius: 40,
+                      backgroundImage: AssetImage('images/p2.jpg'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12.0),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.grey,
+                      radius: 40,
+                      backgroundImage: AssetImage('images/w2.jpg'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12.0),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.grey,
+                      radius: 40,
+                      backgroundImage: AssetImage('images/p3.jpg'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12.0),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.grey,
+                      radius: 40,
+                      backgroundImage: AssetImage('images/w1.jpg'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12.0),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.grey,
+                      radius: 40,
+                      backgroundImage: AssetImage('images/w2.jpg'),
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
